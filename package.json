@@ -8,7 +8,7 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint ./lib && eslint ./tests",
     "test": "npm run lint && npm run unit-test",
-    "unit-test": "nyc --silent --reporter=text mocha tests/**/*.js"
+    "unit-test": "nyc --silent --reporter=text mocha tests/**/no-unused-styles-copy.js"
   },
   "files": [
     "LICENSE",
